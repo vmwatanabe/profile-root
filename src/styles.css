@@ -1,0 +1,13 @@
+#main-container {
+  display: flex;
+  height: 100vw;
+  position: relative;
+}
+
+#main-container > #content {
+  width: 1192px;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  background: red;
+}
