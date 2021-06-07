@@ -56,7 +56,8 @@
         "imports": {
           "@vmwatanabe/root-config": "//localhost:9000/vmwatanabe-root-config.js",
           "@vmwatanabe/content": "//localhost:9002/vmwatanabe-content.js",
-          "@vmwatanabe/sidebar": "//localhost:9001/js/app.js"
+          "@vmwatanabe/sidebar": "//localhost:9001/js/app.js",
+          "@vmwatanabe/styleguide": "//localhost:9003/vmwatanabe-styleguide.js"
         }
       }
     </script>
@@ -76,37 +77,12 @@
     <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js"></script>
     <% } %>
-    <style>
-      #main-container {
-        display: flex;
-        height: 100vw;
-        position: relative;
-      }
-
-      #main-container > #content {
-        width: 1192px;
-        height: 100%;
-        display: flex;
-        width: 100%;
-        margin: auto;
-        background: #d9d9d9;
-      }
-
-      #sidebar-container {
-        flex: 1;
-        overflow: hidden;
-      }
-
-      #content-container {
-        flex: 3;
-        overflow: hidden;
-      }
-    </style>
   </head>
   <body>
     <main></main>
     <script>
       System.import("@vmwatanabe/root-config");
+      System.import("@vmwatanabe/styleguide");
     </script>
     <import-map-overrides-full
       show-when-local-storage="devtools"
