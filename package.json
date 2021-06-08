@@ -6,7 +6,9 @@
     "test": "cross-env BABEL_ENV=test jest --passWithNoTests",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "deploy": "yarn build && aws s3 cp --recursive ./dist s3://watanabethedev.com",
+    "deploy-pages": "aws s3 cp --recursive ../pages s3://watanabethedev.com/pages"
   },
   "husky": {
     "hooks": {
