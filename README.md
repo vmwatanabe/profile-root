@@ -11,6 +11,9 @@ To run this locally, you will eigher have to run all parcels or modify the profi
 ## Related repositories
 
 [profile-root](https://github.com/vmwatanabe/profile-root) - THIS REPOSITORY - The root of the project - single-spa
+
 [profile-sidebar](https://github.com/vmwatanabe/profile-sidebar) - The sidebar - Vue.js
+
 [profile-content](https://github.com/vmwatanabe/profile-content) - The content container - React/TypeScript
+
 [profile-styleguide](https://github.com/vmwatanabe/profile-styleguide) - Common styles - JS
